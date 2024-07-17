@@ -1,6 +1,6 @@
 # Neovim Configuration
 
-This are my neovim configuration files.
+These are my neovim configuration files.
 
 ## Requirements
 
