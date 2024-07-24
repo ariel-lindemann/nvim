@@ -1,4 +1,4 @@
-[![Requires](https://img.shields.io/badge/requires-nvim%200.10%2B-9cf?logo=neovim)](https://neovim.io//)
+![Code Size](https://img.shields.io/github/languages/code-size/ariel-lindemann/nvim) [![Requires](https://img.shields.io/badge/requires-nvim%200.10%2B-9cf?logo=neovim)](https://neovim.io//)
 
 # Neovim Configuration
 
@@ -13,5 +13,5 @@ These are my neovim configuration files.
 ## Setup
 
 Place the folder in `~/.config`. 
-Run `./bootstrap.sh` to install the dependencies (including neovim).
+Run `./bootstrap.sh` to install the dependencies (including neovim). Only works on Debian-based Linux for now.
 For toubleshooting, from inside neovim run `:checkhealth nvim` and `:checkhealth Lazy`.
