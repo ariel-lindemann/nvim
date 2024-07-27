@@ -9,10 +9,6 @@ return {
       initialization_options = {
         fallback_flags = { '-std=c++17' },
       },
-      on_attach = function(client, bufnr)
-        -- Formatting on save
-        vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format({async = true})]]
-      end
     })
   end
 }
