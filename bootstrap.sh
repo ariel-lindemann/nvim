@@ -36,10 +36,22 @@ add_to_path() {
 
 add_to_path
 
-echo "Installing dependencies ..."
+printf "Installing dependencies ..."
 
-sudo apt update
-sudo apt install -y \
-	gcc \
-	ripgrep
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	sudo apt update
+	sudo apt install -y \
+		gcc \
+		ripgrep
+
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+	brew install gcc \
+		ripgrep
+else
+	echo "Automatic dependency installation not supported for $OSTYPE. Please install them manually"
+fi
+
+printf "\nChecking installation ...\n\n"
+
+nvim --version
 
