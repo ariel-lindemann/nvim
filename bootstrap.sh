@@ -43,10 +43,13 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	sudo apt install -y \
 		gcc \
 		ripgrep
+		nodejs \
+		npm
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install gcc \
-		ripgrep
+		ripgrep \
+		node
 else
 	echo "Automatic dependency installation not supported for $OSTYPE. Please install them manually"
 fi
