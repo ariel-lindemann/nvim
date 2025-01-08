@@ -13,5 +13,6 @@ These are my neovim configuration files.
 ## Setup
 
 Place the folder in `~/.config`. 
-Run `./bootstrap.sh` to install the dependencies (including neovim). Only works on Debian-based Linux for now.
+Run `./bootstrap.sh` to install the dependencies (including neovim). Only works on Debian-based Linux (apt) and macOS (homebrew) for now.
+
 For toubleshooting, from inside neovim run `:checkhealth nvim` and `:checkhealth Lazy`.
