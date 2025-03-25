@@ -33,6 +33,14 @@ return {
             }
           end,
         },
+        rust = {
+          function()
+            return {
+              exe = "rustfmt",
+              stdin = true,
+            }
+          end,
+        },
       },
     })
   end,
