@@ -4,7 +4,8 @@ return {
     version = "*",
     opts = {
       open_mapping = [[tt]],
-      direction = 'horizontal'
+      insert_mappings = false,
+      direction = "horizontal",
     },
   },
 }
