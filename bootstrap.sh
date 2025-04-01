@@ -1,15 +1,17 @@
 #!/bin/bash
 
+ARCHIVE_NAME=nvim-linux-x86_64.tar.gz
+
 download_nvim() {
-	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+	wget https://github.com/neovim/neovim/releases/download/stable/$ARCHIVE_NAME
 	sudo rm -rf /opt/nvim
-	sudo tar -C /opt -xzf nvim-linux64.tar.gz
-	rm nvim-linux64.tar.gz
+	sudo tar -C /opt -xzf $ARCHIVE_NAME
+	rm $ARCHIVE_NAME
 }
 
 add_to_path() {
 
-	NEW_PATH_DIR="/opt/nvim-linux64/bin"
+	NEW_PATH_DIR="/opt/nvim-linux-x86_64/bin"
 
 	# Check if the directory already exists in the PATH
 	if [[ ":$PATH:" == *":$NEW_PATH_DIR:"* ]]; then
@@ -46,8 +48,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 		curl \
 		gcc \
 		ripgrep
-		nodejs \
-		npm
+		#nodejs \
+		#npm
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install gcc \
