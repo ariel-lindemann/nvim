@@ -13,7 +13,7 @@ vim.keymap.set("v", "<", "<gv", { noremap = true })
 vim.keymap.set("v", ">", ">gv", { noremap = true })
 
 -- LSP
-vim.keymap.set("n", "<leader>gd", ":lua vim.lsp.buf.definition()<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation()<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>gr", ":lua vim.lsp.buf.references()<CR>", { noremap = true })
+vim.keymap.set("n", "gdd", ":lua vim.lsp.buf.definition()<CR>", { noremap = true })
+-- vim.lsp.buf.implementation() <== gri
+-- vim.lsp.buf.rename()         <== grn
+-- vim.lsp.buf.references()     <== grr
