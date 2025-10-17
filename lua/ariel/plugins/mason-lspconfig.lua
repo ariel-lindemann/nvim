@@ -4,7 +4,7 @@ return {
   config = function()
     require("mason").setup()
     require("mason-lspconfig").setup()
-    require("lspconfig").lua_ls.setup({
+    vim.lsp.config("lua_ls", {
       on_init = function(client)
         if client.workspace_folders then
           local path = client.workspace_folders[1].name
