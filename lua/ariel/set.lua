@@ -9,3 +9,6 @@ vim.cmd 'colorscheme habamax'
 vim.cmd 'set number'
 
 vim.opt.scrolloff = 8
+
+vim.cmd('packadd nvim.undotree')
+vim.keymap.set("n", "<leader>u", require("undotree").open)

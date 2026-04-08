@@ -1,4 +1,4 @@
-![Code Size](https://img.shields.io/github/languages/code-size/ariel-lindemann/nvim) [![Requires](https://img.shields.io/badge/requires-nvim%200.10%2B-9cf?logo=neovim)](https://neovim.io//)
+![Code Size](https://img.shields.io/github/languages/code-size/ariel-lindemann/nvim) [![Requires](https://img.shields.io/badge/requires-nvim%200.12%2B-9cf?logo=neovim)](https://neovim.io//)
 
 # Neovim Configuration
 
@@ -6,7 +6,7 @@ These are my neovim configuration files.
 
 ## Requirements
 
-+  [Neovim (v0.11.0)](https://github.com/neovim/neovim/releases/tag/v0.11.0) or newer
++  [Neovim (v0.12.0)](https://github.com/neovim/neovim/releases/tag/v0.12.0) or newer
 +  [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
 +  a C compiler, such as [GCC](https://gcc.gnu.org/)
 
